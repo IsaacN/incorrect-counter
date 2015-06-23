@@ -47,25 +47,25 @@ if ($conn->connect_error) {
 	next($userData);
 	$full_name_2 = explode('_', key($userData));
 	$position2Name = $full_name_2[0];
-	$id_2 = 'user_id_'.$full_name_1[1];
+	$id_2 = 'user_id_'.$full_name_2[1];
 	$position2Score = $userData[key($userData)];
 
 	next($userData);
 	$full_name_3 = explode('_', key($userData));
 	$position3Name = $full_name_3[0];
-	$id_3 = 'user_id_'.$full_name_1[1];
+	$id_3 = 'user_id_'.$full_name_3[1];
 	$position3Score = $userData[key($userData)];
 
 	next($userData);
 	$full_name_4 = explode('_', key($userData));
 	$position4Name = $full_name_4[0];
-	$id_4 = 'user_id_'.$full_name_1[1];
+	$id_4 = 'user_id_'.$full_name_4[1];
 	$position4Score = $userData[key($userData)];
 
 	next($userData);
 	$full_name_5 = explode('_', key($userData));
 	$position5Name = $full_name_5[0];
-	$id_5 = 'user_id_'.$full_name_1[1];
+	$id_5 = 'user_id_'.$full_name_5[1];
 	$position5Score = $userData[key($userData)];
 
 	// $userNamesRanked = array(
