@@ -32,31 +32,41 @@ if ($conn->connect_error) {
 		$userNames[$userID]=$userName;
 	};
 	$userData = array(
-		$userNames[1] => $userScores[1],
-		$userNames[2] => $userScores[2],
-		$userNames[3] => $userScores[3],
-		$userNames[4] => $userScores[4],
-		$userNames[5] => $userScores[5],
+		$userNames[1].'_1' => $userScores[1],
+		$userNames[2].'_2' => $userScores[2],
+		$userNames[3].'_3' => $userScores[3],
+		$userNames[4].'_4' => $userScores[4],
+		$userNames[5].'_5' => $userScores[5],
 		);
 	arsort($userData);
-	$position1Name = key($userData);
-	$position1Score = $userData[$position1Name];
+	$full_name_1 = explode('_', key($userData));
+	$position1Name = $full_name_1[0];
+	$id_1 = 'user_id_'.$full_name_1[1];
+	$position1Score = $userData[key($userData)];
 
 	next($userData);
-	$position2Name = key($userData);
-	$position2Score = $userData[$position2Name];
+	$full_name_2 = explode('_', key($userData));
+	$position2Name = $full_name_2[0];
+	$id_2 = 'user_id_'.$full_name_1[1];
+	$position2Score = $userData[key($userData)];
 
 	next($userData);
-	$position3Name = key($userData);
-	$position3Score = $userData[$position3Name];
+	$full_name_3 = explode('_', key($userData));
+	$position3Name = $full_name_3[0];
+	$id_3 = 'user_id_'.$full_name_1[1];
+	$position3Score = $userData[key($userData)];
 
 	next($userData);
-	$position4Name = key($userData);
-	$position4Score = $userData[$position4Name];
+	$full_name_4 = explode('_', key($userData));
+	$position4Name = $full_name_4[0];
+	$id_4 = 'user_id_'.$full_name_1[1];
+	$position4Score = $userData[key($userData)];
 
 	next($userData);
-	$position5Name = key($userData);
-	$position5Score = $userData[$position5Name];
+	$full_name_5 = explode('_', key($userData));
+	$position5Name = $full_name_5[0];
+	$id_5 = 'user_id_'.$full_name_1[1];
+	$position5Score = $userData[key($userData)];
 
 	// $userNamesRanked = array(
 	// 	1 => key($userData[$userNames[1]),
