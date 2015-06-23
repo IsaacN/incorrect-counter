@@ -15,14 +15,14 @@
     <?php include('leaderboard.php');?>
   </head>
   <body>
-    <div class='jumbotron leader scorebox'>
-      <div class='wrapper leader'>
-        <h2 class='name leader'>Jordan</h2>
-        <p class='count leader'>123</p>
+    <div class='jumbotron position1 scorebox'>
+      <div class='wrapper position1'>
+        <h2 class='name position1'><?php echo $position1Name; ?></h2>
+        <p class='count position1'><?php echo $position1Score; ?></p>
       </div>
-      <div class='add leader'>
+      <div class='add position1'>
         <div class='wrapper'>
-          <span class='addButton'>
+          <span class='addButton position1'>
             +
           </span>
         </div>
@@ -32,12 +32,12 @@
       <div class='container-fluid'>
         <div class='col-md-3 scorebox'>
           <div class='wrapper'>
-            <h3 class='name second'>Andy</h3>
-            <p class='count'>100</p>
+            <h3 class='name position2'><?php echo $position2Name; ?></h3>
+            <p class='count position2'><?php echo $position2Score; ?></p>
           </div>
-          <div class='add second'>
+          <div class='add position2'>
             <div class='wrapper'>
-              <span class='addButton'>
+              <span class='addButton position2'>
                  +
               </span>
             </div>
@@ -45,12 +45,12 @@
         </div>
         <div class='col-md-3 scorebox'>
           <div class='wrapper'>
-            <h3 class='name third'>Isaac</h3>
-            <p class='count'>50</p>
+            <h3 class='name position3'><?php echo $position3Name; ?></h3>
+            <p class='count position3'><?php echo $position3Score; ?></p>
           </div>
-          <div class='add third'>
+          <div class='add position3'>
             <div class='wrapper'>
-              <span class='addButton'>
+              <span class='addButton position3'>
                  +
               </span>
             </div>
@@ -58,12 +58,12 @@
         </div>
         <div class='col-md-3 scorebox'>
           <div class='wrapper'>
-            <h3 class='name fourth'>Alex</h3>
-            <p class='count'>25</p>
+            <h3 class='name position4'><?php echo $position4Name; ?></h3>
+            <p class='count position4'><?php echo $position4Score; ?></p>
           </div>
-          <div class='add fourth'>
+          <div class='add position4'>
             <div class='wrapper'>
-              <span class='addButton'>
+              <span class='addButton position4'>
                  +
               </span>
             </div>
@@ -71,12 +71,12 @@
         </div>
         <div class='col-md-3 scorebox'>
           <div class='wrapper'>
-            <h3 class='name fifth'>Nick</h3>
-            <p class='count'>10</p>
+            <h3 class='name position5'><?php echo $position5Name; ?></h3>
+            <p class='count position5'><?php echo $position5Score; ?></p>
           </div>
-          <div class='add fifth'>
+          <div class='add position5'>
             <div class='wrapper'>
-              <span class='addButton'>
+              <span class='addButton position5'>
                  +
               </span>
             </div>
