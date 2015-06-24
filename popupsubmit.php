@@ -1,17 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$database = "incorrectness-counter";
-
-// Create connection
-$conn = mysql_connect($servername, $username, $password);
-mysql_select_db($database, $conn) or die("Could not find database."); 
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-};
+include('dbconn.php');
 
 
   $comment = mysql_real_escape_string($_POST['comment']);
