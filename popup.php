@@ -15,7 +15,7 @@ include('dbconn.php');
 <form class="popup-form">
   <div class="form-group">
     <label for="comment">Comment</label>
-    <textarea type="text" class="form-control" id="comment" name="comment" placeholder="Comment" style="min-height:100px"></textarea>
+    <textarea type="text" class="form-control" id="comment" name="comment" placeholder="Optional" style="min-height:100px"></textarea>
   </div>
   <div class="form-group">
     <label for="reporter">Reporter</label>
