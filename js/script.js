@@ -38,7 +38,7 @@ $(document).ready(function(){
 	                    callback: function() {
 		                    var comment = $('#comment').val();
 							var reporter = $('#reporter').val();
-		                    if (comment.trim() == '' || reporter == 'none')
+		                    if (reporter == 'none')
 		                    {
 		                    	console.log('Incomplete Details');
 	                    		return false;
